@@ -10,14 +10,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
         rel="stylesheet">
-        <script defer src="../JS/popup.js"></script>
+        <script defer src="../js/popup.js"></script>
 </head>
 
 <body class="page">
     <header class="header">
         <img class="site-logo" src="../img/logo.svg" alt="Логотип">
         <ul class="site-menu">
-            <li><a class="menu-link " href="../index.html">Главная</a></li>
+            <li><a class="menu-link" href="../index.html">Главная</a></li>
             <li><a class="menu-link active-link" href="#">Студенты</a></li>
             <li><a class="menu-link" href="about.html">О курсе</a></li>
             <li><a class="menu-link" href="contacts.html">Контакты</a></li>
@@ -25,7 +25,7 @@
         <a class="login-button" href="login.html">Войти</a>
         <div class="login-popup">
             <h2 class="login-heading">Войти на сайт</h2>
-            <form class="login-form" action="" method="get">
+            <form class="login-form" action="https" method="get">
                 <input class="login-input" name="login" type="text" placeholder="Логин" required="">
                 <input class="password-input" type="password" name="password"
                 placeholder="Пароль" required="">
@@ -36,31 +36,33 @@
     <main class="main">
         <h1 class="main-hading">Студенты потока 08.02.2020 👧👦</h1>
         <div class="students">
-            <section class="student">
-                <img src="../img/avatar-man.svg" alt="Аватар студента" width="200" height="270">
-                <p class="student-name">Василий Иванов</p>
-            </section>
-            <section class="student new">
+            <a class="my" href="my.html">
+                <div class="student">
+                    <img src="../img/avatar-man.svg" alt="Аватар студента" width="200" height="270">
+                    <p class="student-name">Денис Шерников</p>
+                </div>
+            </a>
+            <div class="student new">
                 <img src="../img/avatar-woman.svg" alt="Аватар студента" width="200" height="270">
                 <p class="student-name">Мария Александрова</p>
                 <img class="text-new" src="../img/tag.svg" alt="Новичок">
-            </section>
-            <section class="student">
+            </div>
+            <div class="student">
                 <img src="../img/avatar-woman.svg" alt="Аватар студента" width="200" height="270">
                 <p class="student-name">Мария Александрова</p>
-            </section>
-            <section class="student">
+            </div>
+            <div class="student">
                 <img src="../img/avatar-man.svg" alt="Аватар студента" width="200" height="270">
                 <p class="student-name">Василий Иванов</p>
-            </section>
-            <section class="student">
+            </div>
+            <div class="student">
                 <img src="../img/avatar-woman.svg" alt="Аватар студента" width="200" height="270">
                 <p class="student-name">Мария Александрова</p>
-            </section>
-            <section class="student">
+            </div>
+            <div class="student">
                 <img src="../img/avatar-man.svg" alt="Аватар студента" width="200" height="270">
                 <p class="student-name">Василий Иванов</p>
-            </section>
+            </div>
         </div>
     </main>
     <footer class="footer">
