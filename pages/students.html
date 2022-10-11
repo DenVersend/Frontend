@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
         rel="stylesheet">
+        <script defer src="../JS/popup.js"></script>
 </head>
 
 <body class="page">
@@ -22,6 +23,15 @@
             <li><a class="menu-link" href="contacts.html">Контакты</a></li>
         </ul>
         <a class="login-button" href="login.html">Войти</a>
+        <div class="login-popup">
+            <h2 class="login-heading">Войти на сайт</h2>
+            <form class="login-form" action="" method="get">
+                <input class="login-input" name="login" type="text" placeholder="Логин" required="">
+                <input class="password-input" type="password" name="password"
+                placeholder="Пароль" required="">
+                <button class="popup-button" type="submit">Войти</button>
+            </form>
+        </div>
     </header>
     <main class="main">
         <h1 class="main-hading">Студенты потока 08.02.2020 👧👦</h1>
@@ -30,10 +40,10 @@
                 <img src="../img/avatar-man.svg" alt="Аватар студента" width="200" height="270">
                 <p class="student-name">Василий Иванов</p>
             </section>
-            <section class="student">
+            <section class="student new">
                 <img src="../img/avatar-woman.svg" alt="Аватар студента" width="200" height="270">
                 <p class="student-name">Мария Александрова</p>
-                <p>Новичок</p>
+                <img class="text-new" src="../img/tag.svg" alt="Новичок">
             </section>
             <section class="student">
                 <img src="../img/avatar-woman.svg" alt="Аватар студента" width="200" height="270">

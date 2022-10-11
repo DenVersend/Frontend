@@ -87,7 +87,7 @@
     position: absolute;
     z-index: 2;
     left: 50%;
-    top: 16%;
+    top: 160px;
     transform: translate(-50%,0%);
     box-sizing: border-box;
     width: 100%;
@@ -105,12 +105,12 @@
     font-size: 24px;
     line-height: 28px;
     text-align: center;
+    margin: 0px 0px 36px;
 }
 .login-form {
     display: flex;
     align-items: center;
     flex-direction: column;
-
 }
 .login-form > input {
     width: 100%;
@@ -118,7 +118,6 @@
     min-height: 55px;
     margin-bottom: 56px;
     padding: 0;
-    /* box-sizing: border-box; */
     border: 1px solid #808080;
 }
 .login-input::placeholder {
@@ -176,6 +175,7 @@
     font-weight: 700;
     font-size: 30px;
     line-height: 1.17;
+    margin: 33px 0 25px;
 }
 h2 {
     font-family: 'Roboto';
@@ -215,6 +215,14 @@ height: auto;
 }
 .student-name {
     margin: 8px 0;
+}
+.new {
+  position: relative; 
+}
+.text-new {
+    position: absolute;
+    top: -5%;
+    left: 60%;
 }
 /* footer */
 .footer {
