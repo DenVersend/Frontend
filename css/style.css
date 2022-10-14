@@ -3,8 +3,9 @@
     flex-direction: column;
     min-height: 100vh;
     margin: 0;
-    font-family: 'Roboto',sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
+
 /* Header */
 .header {
     box-sizing: border-box;
@@ -19,6 +20,7 @@
     align-items: center;
     background-color: #213B7E;
 }
+
 @media (max-width:790px) {
     .header {
         justify-content: center;
@@ -26,15 +28,18 @@
         gap: 1em;
     }
 }
+
 .site-logo {
     width: auto;
 }
+
 @media (max-width:790px) {
     .site-logo {
         width: 80%;
         min-height: 80px;
     }
 }
+
 .site-menu {
     display: flex;
     flex-wrap: wrap;
@@ -43,15 +48,18 @@
     padding: 0;
     margin: 0;
 }
+
 @media (max-width:790px) {
     .site-menu {
         justify-content: center;
     }
 }
-.site-menu > li {
+
+.site-menu>li {
     display: flex;
     min-height: 80px;
 }
+
 .menu-link {
     display: flex;
     align-items: center;
@@ -62,11 +70,13 @@
     color: #fff;
     padding: 0 18px;
 }
+
 .menu-link:hover {
     color: #213B7E;
     background-color: #fff;
     text-decoration: none;
 }
+
 .login-button {
     display: flex;
     justify-content: center;
@@ -81,6 +91,7 @@
     background-color: #EA5D21;
     color: #FFFFFF;
 }
+
 /* Login popup */
 .login-popup {
     display: none;
@@ -88,17 +99,18 @@
     z-index: 2;
     left: 50%;
     top: 160px;
-    transform: translate(-50%,0%);
+    transform: translate(-50%, 0%);
     box-sizing: border-box;
     width: 100%;
     max-width: 500px;
     min-height: 418px;
     padding: 26px 28px 56px;
     background-color: #FFFFFF;
-    border:1px solid #213B7E;
+    border: 1px solid #213B7E;
     box-shadow: 5px 5px 4px 0 rgba(0, 0, 0, 0.25);
 }
-.login-heading{
+
+.login-heading {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -107,12 +119,14 @@
     text-align: center;
     margin: 0px 0px 36px;
 }
+
 .login-form {
     display: flex;
     align-items: center;
     flex-direction: column;
 }
-.login-form > input {
+
+.login-form>input {
     width: 100%;
     max-width: 444px;
     min-height: 55px;
@@ -120,6 +134,7 @@
     padding: 0;
     border: 1px solid #808080;
 }
+
 .login-input::placeholder {
     font-family: 'Roboto';
     font-style: normal;
@@ -129,6 +144,7 @@
     color: #808080;
     padding: 0 0.75em;
 }
+
 .password-input::placeholder {
     font-family: 'Roboto';
     font-style: normal;
@@ -138,8 +154,9 @@
     color: #808080;
     padding: 0 0.75em;
 }
+
 .popup-button {
-    font-family: 'Roboto',sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -154,21 +171,24 @@
     background-color: #EA6113;
     border: none;
 }
+
 /* Main */
 .main {
     width: 100%;
-    max-width: 911px;
+    max-width: 931px;
     margin: 0 auto;
     flex-grow: 1;
-    padding: 0 2vw;
+    padding: 0 10px;
     box-sizing: border-box;
 }
+
 .class-photo {
     object-fit: cover;
     width: 100%;
     max-width: 523px;
     height: 316px;
 }
+
 .main-hading {
     font-family: 'Roboto';
     font-style: normal;
@@ -177,13 +197,16 @@
     line-height: 1.17;
     margin: 33px 0 25px;
 }
+
 h2 {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 25px;
     line-height: 1.16;
+    margin: 15px 0 10px;
 }
+
 .intro-text {
     width: 100%;
     max-width: 634px;
@@ -192,25 +215,31 @@ h2 {
     font-weight: 400;
     font-size: 18px;
     line-height: 1.17;
+    margin: 0;
 }
-.intro-text > strong {
+
+.intro-text>strong {
     font-weight: 700;
 }
-.intro-text > em {
+
+.intro-text>em {
     font-style: italic;
     color: #CF5510;
 }
+
 /* Students */
-.main-students{
+.main-students {
     max-width: none;
     width: auto;
 }
+
 .students {
-display: flex;
-flex-wrap: wrap;
-max-width: 1202px;
-gap: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1202px;
+    gap: 50px;
 }
+
 .student {
     display: flex;
     flex-direction: column;
@@ -220,87 +249,108 @@ gap: 50px;
     max-width: 200px;
     background-color: #bfa07173;
 }
-.student > img {
-object-fit: contain;
-object-position: bottom;
+
+.student>img {
+    object-fit: contain;
+    object-position: bottom;
 }
+
 .student-name {
     margin: 8px 0;
 }
+
 .my {
     text-decoration: none;
     color: #000000;
 }
+
 .new {
-  position: relative; 
+    position: relative;
 }
+
 .text-new {
     position: absolute;
     top: -5%;
     left: 58%;
 }
+
 /* About */
-.main-about{
-    max-width: 820px;
+.main-about {
+    max-width: 840px;
 }
+
 .about-text {
-font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 25px;
-line-height: 1.16;
-margin: 0 0 15px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 1.16;
+    margin: 0 0 15px;
 }
+
 .video {
     width: 100%;
     min-height: 550px;
 }
+
 /* Contacts */
 .main-contacts {
-    max-width: none;
-    padding: 0 4vw;
+    max-width: 1288px;
 }
+
 .contacts-hading {
     max-width: 820px;
     margin: 33px auto 25px;
 }
+
 .map {
     width: 100%;
 }
+
 .contact {
     max-width: 820px;
     margin: 0 auto;
 }
+
 .address {
-font-family: 'Roboto';
-Font-style: normal;
-font-size: 18px;
-line-height: 1.16;
+    font-family: 'Roboto';
+    Font-style: normal;
+    font-size: 18px;
+    line-height: 1.16;
+}
+.address-text {
+    margin: 0 0 1em;
 }
 .adress-link {
     color: #000000;
 }
+
 /* MY Page */
 .avatar {
     position: relative;
 }
+
 .avatar-foto {
     max-width: 300px;
 }
+
 .check {
     position: absolute;
     top: -4%;
     left: 32%;
 }
-.check-text{
+
+.check-text {
     position: absolute;
     top: 1%;
     left: 40%;
     color: #4dca2e;
 }
+
 .warning {
     font-size: 10px;
 }
+
 /* footer */
 .footer {
     box-sizing: border-box;
@@ -316,18 +366,22 @@ line-height: 1.16;
     background-color: #213B7E;
     color: rgba(255, 255, 255, 0.5);
 }
+
 .copywrite {
     color: rgba(255, 255, 255, 0.5);
 }
+
 .innop-link {
     color: rgba(255, 255, 255, 0.5);
 }
+
 /* JS */
 .active-link {
     color: #213B7E;
     background-color: #fff;
     text-decoration: none;
 }
+
 .show-popup {
     display: block;
 }
