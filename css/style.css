@@ -176,7 +176,7 @@
 .main {
     width: 100%;
     max-width: 943px;
-    margin: 0 auto;
+    margin: 0 auto 16px;
     flex-grow: 1;
     padding: 0 16px;
     box-sizing: border-box;
@@ -248,6 +248,9 @@ h2 {
 .main-students {
     max-width: 1234px;
 }
+.student-hading {
+    margin: 37px 0 24px;
+}
 
 .students {
     display: flex;
@@ -283,11 +286,22 @@ h2 {
 .new {
     position: relative;
 }
-
 .text-new {
+    display: flex;
+    padding: 2px 5px;
+    border-radius: 20px;
+    background-color: #3AA828;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.16;
     position: absolute;
-    top: -5%;
-    left: 58%;
+    top: 0;
+    right: -13px;
+    transform: translateY(-50%);
 }
 
 /* About */
