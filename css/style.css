@@ -95,8 +95,8 @@
 /* Login popup */
 .login-popup {
     display: none;
-    position: absolute;
-    z-index: 2;
+    position: fixed;
+    z-index: 1;
     left: 50%;
     top: 160px;
     transform: translate(-50%, 0%);
@@ -266,16 +266,22 @@ h2 {
     flex: 1 1 0;
     box-sizing: border-box;
     max-width: 200px;
-    background-color: #bfa07173;
 }
 
 .student>img {
     object-fit: contain;
     object-position: bottom;
+    background-color: #bfa07173;
 }
 
 .student-name {
-    margin: 8px 0;
+    margin: 8px 0 0;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
 }
 
 .my {
@@ -395,9 +401,15 @@ h2 {
     align-items: center;
     background-color: #213B7E;
     color: rgba(255, 255, 255, 0.5);
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.15;
 }
 
 .copywrite {
+    margin: 18px 0 19px;
     color: rgba(255, 255, 255, 0.5);
 }
 
