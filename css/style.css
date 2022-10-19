@@ -19,6 +19,7 @@
     justify-content: space-between;
     align-items: center;
     background-color: #213B7E;
+
 }
 
 @media (max-width:790px) {
@@ -108,6 +109,16 @@
     background-color: #FFFFFF;
     border: 1px solid #213B7E;
     box-shadow: 5px 5px 4px 0 rgba(0, 0, 0, 0.25);
+}
+@media (max-width:790px) {
+    .login-popup {
+        top: 32%;
+    }
+}
+@media (max-width:525px) {
+    .login-popup {
+        top: 40%;
+    }
 }
 
 .login-heading {
@@ -364,6 +375,7 @@ h2 {
 /* MY Page */
 .avatar {
     position: relative;
+    max-width: 500px;
 }
 
 .avatar-foto {
@@ -372,14 +384,14 @@ h2 {
 
 .check {
     position: absolute;
-    top: -4%;
-    left: 32%;
+    top: 0%;
+    left: 55%;
 }
 
 .check-text {
     position: absolute;
-    top: 1%;
-    left: 40%;
+    top: 3%;
+    left: 69%;
     color: #4dca2e;
 }
 
