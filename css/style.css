@@ -146,24 +146,15 @@
     border: 1px solid #808080;
 }
 
-.login-input::placeholder {
+.login-input::placeholder,.password-input::placeholder {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
-    line-height: 28px;
+    line-height: 1.16;
     color: #808080;
-    padding: 0 0.75em;
-}
-
-.password-input::placeholder {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 28px;
-    color: #808080;
-    padding: 0 0.75em;
+    padding: 17px 14px 10px;
+    position: absolute;
 }
 
 .popup-button {
@@ -241,6 +232,13 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    gap: 56px;
+}
+@media (max-width:862px) {
+    .together {
+        gap: 0;
+        flex-direction: column;
+    }
 }
 .aside {
     color: rgba(100, 100, 100, 1);
@@ -250,9 +248,33 @@ h2 {
     font-size: 36px;
     font-weight: 400;
     line-height: 1.25;
+    position: relative;
+    left: -30px;
+}
+@media (max-width:862px) {
+    .aside {
+        left: 26px;
+        max-width: 200px;
+    }
 }
 .aside > blockquote {
-    margin: 0;
+    margin: 0;   
+}
+.aside > blockquote::before {
+    content: '\201C';
+    position: absolute;
+    top: -9px;
+    left: -31px;
+    font-size: 64px;
+    line-height: 1.25;
+}
+.aside > blockquote::after {
+    content: '\201D';
+    position: absolute;
+    top: 37px;
+    left: 123px;
+    font-size: 64px;
+    line-height: 1.25;
 }
 
 /* Students */
@@ -261,6 +283,10 @@ h2 {
 }
 .student-hading {
     margin: 37px 0 24px;
+}
+.student-hading::after {
+    content: 	
+    '\0020\1F467\1F466';
 }
 
 .students {
@@ -294,15 +320,14 @@ h2 {
     line-height: 1.15;
     text-align: center;
 }
-
+.my:nth-of-type(2) {
+    position: relative;
+}
 .my {
     text-decoration: none;
     color: #000000;
 }
 
-.new {
-    position: relative;
-}
 .text-new {
     display: flex;
     padding: 2px 5px;
@@ -324,6 +349,9 @@ h2 {
 /* About */
 .main-about {
     max-width: 852px;
+}
+.about-hading::after {
+content: '\0020\1F4F1';
 }
 
 .about-text {
@@ -349,7 +377,9 @@ h2 {
     max-width: 820px;
     margin: 33px auto 25px;
 }
-
+.contacts-hading::after {
+    content: '\0020\1F5FA';
+}
 .map {
     width: 100%;
 }
