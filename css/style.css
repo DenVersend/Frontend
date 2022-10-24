@@ -22,7 +22,7 @@
 
 }
 
-@media (max-width:790px) {
+@media (max-width:834px) {
     .header {
         justify-content: center;
         padding: 1em 16px;
@@ -34,7 +34,7 @@
     width: auto;
 }
 
-@media (max-width:790px) {
+@media (max-width:834px) {
     .site-logo {
         width: 80%;
         min-height: 80px;
@@ -50,7 +50,7 @@
     margin: 0;
 }
 
-@media (max-width:790px) {
+@media (max-width:834px) {
     .site-menu {
         justify-content: center;
     }
@@ -70,6 +70,9 @@
     font-size: 20px;
     color: #fff;
     padding: 0 18px;
+    min-width: 130px;
+    justify-content: center;
+    box-sizing: border-box;
 }
 
 .menu-link:hover {
