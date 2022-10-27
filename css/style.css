@@ -113,12 +113,12 @@
     border: 1px solid #213B7E;
     box-shadow: 5px 5px 4px 0 rgba(0, 0, 0, 0.25);
 }
-@media (max-width:790px) {
+@media (max-width:834px) {
     .login-popup {
         top: 32%;
     }
 }
-@media (max-width:525px) {
+@media (max-width:568px) {
     .login-popup {
         top: 40%;
     }
